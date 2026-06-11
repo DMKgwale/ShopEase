@@ -1,0 +1,11 @@
+version: 0.2 
+phases: 
+install: 
+commands: - echo installing dependencies - npm install 
+build: 
+commands: - echo building application - npm run build 
+post_build: 
+commands: - echo build completed 
+artifacts: 
+files: - "**/*" 
+base-directory: build 
