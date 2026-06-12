@@ -1,18 +1,9 @@
 version: 0.2
  
 phases:
-  install:
-    commands:
-      - echo No dependencies required for static HTML, CSS, and JavaScript project
- 
   build:
     commands:
-      - echo No build step required
-      - echo Preparing static website files
- 
-  post_build:
-    commands:
-      - echo Build completed successfully
+      - echo "Packaging static site files"
  
 artifacts:
   files:
