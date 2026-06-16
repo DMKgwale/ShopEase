@@ -152,7 +152,7 @@ function renderProducts() {
     html += `
     <div class="card">
       <h3>${p.name}</h3>
-      <p><b>$${discounted}</b></p>
+      <p><b>R${discounted}</b></p>
       <p>Stock: ${p.stock}</p>
       <button onclick="addToCart(${p.id})">Add to Cart</button>
     </div>`;
@@ -179,7 +179,7 @@ function renderCart() {
   cart.forEach((item, i) => {
     html += `
     <div class="cart-item">
-      ${item.name} - $${item.price}
+      ${item.name} - R${item.price}
       <button onclick="removeFromCart(${i})">Remove</button>
     </div>`;
   });
